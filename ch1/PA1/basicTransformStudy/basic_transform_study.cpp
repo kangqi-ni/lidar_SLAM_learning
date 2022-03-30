@@ -1,6 +1,7 @@
 #include <iostream>
 #include <Eigen/Core>
 #include <Eigen/Geometry>
+#include <math.h>
 
 using namespace std;
 
@@ -29,7 +30,7 @@ int main(int argc, char** argv)
            sin(A(2)),  cos(A(2)), A(1),
               0,          0,        1;
     Eigen::Matrix3d TBA = TOB.inverse() * TOA;
-    BA = Eigen::Vector3d(TBA(0,2), TBA(1,2), acos(TBA(0,0)));
+    BA = Eigen::Vector3d(TBA(0,2), TBA(1,2), atan2(TBA(1,0), TBA(0,0)));
 
     cout << "The right answer is BA: 2 1 1.5708" << endl;
     cout << "Your answer is BA: " << BA.transpose() << endl;
