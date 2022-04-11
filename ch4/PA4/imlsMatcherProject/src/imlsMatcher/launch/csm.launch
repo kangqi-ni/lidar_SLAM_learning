@@ -1,0 +1,4 @@
+<launch>
+    <node name="rviz" pkg="rviz" type="rviz" args = "-d $(find imlsMatcher)/config/config.rviz"/>
+    <node name="csmMatcher_node" pkg="imlsMatcher" type="csmMatcher_node" output="screen"/>
+</launch>
