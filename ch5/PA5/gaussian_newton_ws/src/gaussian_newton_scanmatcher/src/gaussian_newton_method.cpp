@@ -163,8 +163,8 @@ void ComputeHessianAndb(map_t* map, Eigen::Vector3d now_pose,
         Eigen::Matrix<double, 2, 3> dS_dT;
         dS_dT << 1, 0, -sin(theta)*pt[0] - cos(theta)*pt[1],
                   0, 1, cos(theta)*pt[0] - sin(theta)*pt[1];
-        Eigen::Vector2d grad_M(M[1], M[2]);
-        Eigen::Matrix<double,1,3> J = grad_M.transpose() * dS_dT;
+        Eigen::Matrix<double, 1, 2> grad_M(M[1], M[2]);
+        Eigen::Matrix<double, 1, 3> J = grad_M * dS_dT;
 
         H += J.transpose() * J;
         b += fx * J.transpose();
