@@ -1,0 +1,4 @@
+<launch>
+    <node name="occupancy_mapping" pkg="occupancy_mapping" type="occupancy_mapping" output="screen"/>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find occupancy_mapping)/rviz/occupancy_mapping.rviz"/> 
+</launch>
