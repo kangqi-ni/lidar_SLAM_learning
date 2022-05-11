@@ -1,1 +1,1 @@
-PA1 contains programming and short answer solutions for questions from PA1.pdf
+PA1 contains solutions for questions from PA1.pdf
