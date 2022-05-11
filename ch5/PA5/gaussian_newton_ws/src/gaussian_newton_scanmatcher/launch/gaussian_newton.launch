@@ -1,0 +1,4 @@
+<launch>
+    <node name="gauss_newton_node" pkg="gaussian_newton_scanmatcher" type="gaussian_newton_node" output="screen"/>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find gaussian_newton_scanmatcher)/rviz/path.rviz"/>
+</launch>

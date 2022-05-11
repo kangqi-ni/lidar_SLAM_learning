@@ -1,0 +1,1 @@
+/usr/bin/clang++-11 -fPIC  -std=c++14 -O3 -O3 -DNDEBUG  -shared -Wl,-soname,libgmock.so -o ../lib/libgmock.so CMakeFiles/gmock.dir/src/gmock-all.cc.o  -Wl,-rpath,/home/kevin/Documents/lidar_SLAM_learning/ch4/PA4/imlsMatcherProject/src/imlsMatcher/build/gtest/lib ../lib/libgtest.so -lpthread 

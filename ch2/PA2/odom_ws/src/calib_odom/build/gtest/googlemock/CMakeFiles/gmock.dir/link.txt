@@ -1,0 +1,1 @@
+/bin/clang++-10 -fPIC -g  -shared -Wl,-soname,libgmockd.so -o ../lib/libgmockd.so CMakeFiles/gmock.dir/src/gmock-all.cc.o  -Wl,-rpath,/home/kevin/Documents/lidar_SLAM_learning/ch2/PA2/odom_ws/src/calib_odom/build/gtest/lib ../lib/libgtestd.so -lpthread 

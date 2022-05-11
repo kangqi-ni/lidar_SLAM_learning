@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: calib_odom
+Description: Description of calib_odom
+Version: 1.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lcsm -lcalib_odom
+Requires: roscpp std_msgs

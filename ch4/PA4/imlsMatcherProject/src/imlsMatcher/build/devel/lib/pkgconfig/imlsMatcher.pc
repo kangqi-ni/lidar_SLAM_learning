@@ -1,0 +1,8 @@
+prefix=/home/kevin/Documents/lidar_SLAM_learning/ch4/PA4/imlsMatcherProject/src/imlsMatcher/build/devel
+
+Name: imlsMatcher
+Description: Description of imlsMatcher
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
